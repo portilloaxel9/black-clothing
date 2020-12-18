@@ -1,0 +1,143 @@
+/*--------------Detail--------------*/
+.detail-main{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: white;
+
+    .detail-main-div{
+        display: flex;
+        flex-direction: row;
+
+        img{
+            width: 20%;
+        }
+
+        .div-1{
+            width: 1400px;
+            margin-bottom: 10px;
+
+            .detail-title{
+                font-size: 25px;
+                font-weight: bolder;
+                color: black;
+                margin: 20px;
+            }
+    
+            .detail-text{
+                font-size: 20px;
+                color: black;
+                margin-left: 20px;
+                margin-bottom: 10px;
+            }
+
+            .size-list{
+                display: flex;
+                flex-direction: row;
+                margin-left: 20px;
+                margin-bottom: 0px;
+
+                .size{
+                    color: white;
+                    background-color: black;
+                    border: solid black 3px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    padding-right: 10px;
+                    padding-left: 10px;
+                }
+
+                .size:hover{
+                    color: black;
+                    background-color: white;
+                }
+            }
+
+            .payment-methods{
+                margin-left: 20px;
+                margin-bottom: 10px;
+
+                .methods{
+                    margin: 2px;
+                }
+            }
+
+            .price{
+                display: flex;
+                flex-direction: row;
+                margin-left: 20px;
+    
+                .detail-price{
+                    color: white;
+                    background-color: black;
+                    font-size: 20px;
+                    border: solid black 3px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+    
+                .detail-sale{
+                    font-family: initial;
+                    color: black;
+                    background-color: white;
+                    font-size: 20px;
+                    border: solid black 3px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+            }
+        }
+
+        .buy{
+            width: 1200px;
+            border-left: solid black 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1{
+                color: black;
+                font-size: 25px;
+            }
+
+            .buy-price{
+                font-size: 25px;
+            }
+
+            .buy-items{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .buy-summary{
+                font-weight: bold;
+                font-size: 15px;
+                margin-right: 100px;
+            }
+
+            .buy-total{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-top: 16px;
+                border-top: solid black 1px;
+            }
+
+            button{
+                color: white;
+                background-color: black;
+                font-weight: bold;
+                border: solid black 3px;
+                margin-top: 30px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            button:hover{
+                color: black;
+                background-color: white;
+            }
+        }
+    }
+}
