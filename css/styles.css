@@ -224,23 +224,27 @@ body {
     font-weight: bolder;
     color: black;
     margin-bottom: 20px; }
-  .contact-main form {
+  .contact-main .form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px; }
-    .contact-main form input {
+    align-items: center; }
+    .contact-main .form input {
       font-size: 20px;
       width: 300px;
-      margin-bottom: 20px;
       padding-left: 10px;
+      margin-bottom: 20px;
       border: solid black 1.5px; }
-    .contact-main form button {
+    .contact-main .form button {
       width: 150px;
       color: white;
+      margin-bottom: 15px;
       background-color: black;
       font-weight: bold;
       border: solid black 3px; }
-    .contact-main form button:hover {
+    .contact-main .form button:hover {
       color: black;
       background-color: white; }
+    .contact-main .form .p-confirmation {
+      margin-top: 0px;
+      margin-bottom: 20px; }
+/*--------------End--------------*/

@@ -28,3 +28,47 @@
     metSlider.inicio();
 
 }())
+
+(function(){
+    // SCROLL
+    
+    var propScroll = {
+        position: window.pageYOffset,
+        scroll: document.getElementsByClassName('scroll'),
+        destination: null,
+        distance: null,
+        interval: null
+    }
+
+    var metScroll = {
+        inicio: function(){
+            for(var i = 0; i < propScroll.scroll.length; i++){
+                propScroll.scroll[i].addEventListener('click', metScroll.moveSlow)
+            }
+        },
+
+        moveSlow: function(e){
+            e.preventDefault();
+            propScroll.destination = this.getAttribute('href');
+            propScroll.distance = document.querySelector(propScroll.destination).offsetTop;
+            
+            propScroll.position = window.pageYOffset;
+            propScroll.interval = setInterval(function(){
+                
+                if(propScroll.position < propScroll.distance){
+                    propScroll.position += 30;
+
+                    if(propScroll.position >= propScroll.distance){
+                        clearInterval(propScroll.interval);
+                    }
+                }
+
+                window.scrollTo(0, propScroll.position)
+            
+            }, 15);
+        }
+    }
+
+    metScroll.inicio();
+
+}())
