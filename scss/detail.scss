@@ -142,3 +142,105 @@
         }
     }
 }
+/*--------------Media Queries--------------*/
+@media all and (max-width: 800px){
+    .detail-main{
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+        background-color: white;
+    
+        .detail-main-div{
+            display: flex;
+            flex-direction: row;
+    
+            img{
+                width: 30%;
+            }
+    
+            .div-1{
+                width: 1400px;
+                margin-bottom: 10px;
+    
+                .detail-title{
+                    font-size: 20px;
+                    margin: 15px;
+                }
+        
+                .detail-text{
+                    font-size: 10px;
+                    margin-left: 10px;
+                    margin-bottom: 5px;
+                }
+    
+                .size-list{
+                    margin-left: 10px;
+                    margin-bottom: 0px;
+    
+                    .size{
+                        font-size: 10px;
+                        margin-bottom: 5px;
+                        padding-right: 5px;
+                        padding-left: 5px;
+                    }
+                }
+    
+                .payment-methods{
+                    font-size: 10px;
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+    
+                    .methods{
+                        margin: 2px;
+                    }
+                }
+    
+                .price{
+                    margin-left: 10px;
+        
+                    .detail-price{
+                        font-size: 10px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+        
+                    .detail-sale{
+                        font-size: 10px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+                }
+            }
+    
+            .buy{
+                width: 1200px;
+                
+                h1{
+                    font-size: 15px;
+                    margin: 10px;
+                }
+    
+                .buy-price{
+                    font-size: 15px;
+                }
+
+                .buy-summary{
+                    font-size: 10px;
+                    margin-right: 25px;
+                }
+
+                p{
+                    font-size: 8px;
+                }
+
+                button{
+                    font-size: 10px;
+                    margin-bottom: 10px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}
